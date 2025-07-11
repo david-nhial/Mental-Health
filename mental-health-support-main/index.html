@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Andrew Kuanyin">
+   <!-- Add these meta tags -->
+    <meta property="og:title" content="Cross Border Mental Health Support Group">
+    <meta property="og:description" content="Providing compassionate mental health support across international boundaries">
+    <meta property="og:image" content="https://yourdomain.com/images/social-preview.webp">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon options -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://formsubmit.co">
+  <meta name="description" content="Cross Border Mental Health Support Group providing compassionate mental health services across international boundaries">
+  <meta name="keywords" content="mental health, therapy, counseling, support group, cross-border, international">
+<div class="relative">
+    <button id="languageSwitcher" class="flex items-center text-sm">
+        <i class="fas fa-globe mr-1"></i> English
+        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+    </button>
+    <div id="languageDropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg z-10">
+        <a href="/ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+        <a href="/es" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+        <a href="/fr" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>
+    </div>
+</div>
+
+  <title>Cross Border Mental Health Support Group</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+
+  <!-- DNS prefetch for external domains -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --secondary: #10b981;
+      --accent: #8b5cf6;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+    }
+
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    /* Accessibility focus styles */
+    a:focus, button:focus, input:focus, textarea:focus, select:focus {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* Navigation */
+    .nav-link {
+      position: relative;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus-visible::after {
+      width: 100%;
+    }
+
+    /* Hero section */
+    .hero-section {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    /* Cards */
+    .card {
+      transition: all 0.3s ease;
+      border-bottom: 4px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-card:hover {
+      border-bottom-color: var(--secondary);
+    }
+
+    .program-card:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    /* Team images */
+    .team-img-container {
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto 1rem;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 4px solid rgba(79, 70, 229, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+  background-color: white;
+  color: var(--primary);
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+    .team-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover .team-img-container {
+      border-color: var(--primary);
+    }
+
+    .team-card:hover .team-img {
+      transform: scale(1.05);
+    }
+
+    /* Buttons */
+    .btn {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(79, 70, 229, 0.05);
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+
+    .btn:hover::after {
+      animation: ripple 1s ease-out;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20);
+        opacity: 0;
+      }
+    }
+
+    /* Impact counters */
+    .impact-counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    .testimonial-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .mobile-menu.open {
+      max-height: 500px;
+    }
+
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Crisis alert */
+    .crisis-alert {
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      color: white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    /* Form inputs */
+    .form-input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      transition: all 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+
+    /* Responsive typography */
+    @media (min-width: 768px) {
+      .text-hero {
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      .no-print {
+        display: none;
+      }
+
+      body {
+        font-size: 12pt;
+        line-height: 1.4;
+      }
+
+      a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+</head>
+<body class="bg-gray-50">
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top no-print" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Crisis Alert Banner -->
+  <div class="crisis-alert py-2 text-center text-sm font-semibold no-print">
+    <i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i>
+    <span>In crisis? Call <a href="tel:+201146359461" class="underline font-bold">+201146359461</a> for Mental Health Support Lifeline or text HOME to +201102522874</span>
+  </div>
+
+  <header class="bg-white shadow-md py-4 sticky top-0 z-50 no-print">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <a href="#home" class="flex items-center focus:outline-none">
+      <!-- Mobile logo (hidden on desktop) -->
+      <img src="cross-logo.jpg" alt="CBMHSG Logo" class="h-8 md:hidden">
+      <!-- Desktop logo (hidden on mobile) -->
+      <img src="cross-logo.jpg" alt="CBMHSG Logo" class="h-10 hidden md:block">
+    </a>
+ <!-- Desktop Navigation -->
+<nav class="hidden md:block" aria-label="Main navigation">
+  <ul class="flex space-x-6">
+    <li><a href="#home" class="nav-link hover:text-indigo-500 font-medium">Home</a></li>
+    <li><a href="#about" class="nav-link hover:text-indigo-500 font-medium">About</a></li>
+    <li><a href="#services" class="nav-link hover:text-indigo-500 font-medium">Services</a></li>
+    <li><a href="#resources" class="nav-link hover:text-indigo-500 font-medium">Resources</a></li>
+    <li><a href="#get-involved" class="nav-link hover:text-indigo-500 font-medium">Get Involved</a></li>
+    <li><a href="#contact" class="nav-link hover:text-indigo-500 font-medium">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Navigation -->
+<div id="mobileMenu" class="mobile-menu md:hidden bg-white" aria-hidden="true">
+  <ul class="px-4 py-2 space-y-3">
+    <li><a href="#home" class="block py-2 hover:text-indigo-500 font-medium">Home</a></li>
+    <li><a href="#about" class="block py-2 hover:text-indigo-500 font-medium">About</a></li>
+    <li><a href="#services" class="block py-2 hover:text-indigo-500 font-medium">Services</a></li>
+    <li><a href="#resources" class="block py-2 hover:text-indigo-500 font-medium">Resources</a></li>
+    <li><a href="#get-involved" class="block py-2 hover:text-indigo-500 font-medium">Get Involved</a></li>
+    <li><a href="#contact" class="block py-2 hover:text-indigo-500 font-medium">Contact</a></li>
+  </ul>
+</div>
+    </div>
+    </div>
+</header>
+
+  <!-- Main content -->
+  <main id="main-content">
+<!-- Hero -->
+<section id="home" class="hero-section text-center py-20 md:py-28" style="background: linear-gradient(rgba(30, 30, 45, 0.75), rgba(79, 70, 229, 0.4)), url('world.jpeg') no-repeat center center/cover; color: white;">    <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Cross Border Mental Health Support</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Providing compassionate mental health support across borders.</p>
+        <a href="#get-involved" class="btn btn-primary px-8 py-3 rounded-full font-semibold">
+            Join Our Support Network
+        </a>
+    </div>
+</section>
+
+    <section id="about" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <img src="founder.jpg"
+             alt="Group therapy session"
+             class="rounded-lg shadow-lg w-full">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-6 text-indigo-600">About Us</h2>
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Who We Are</h3>
+          <p class="text-gray-700">A cross-border initiative offering mental health support across regions.</p>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Our Mission</h3>
+          <p class="text-gray-700">To provide accessible, culturally sensitive, and professional mental health support.</p>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Our Vision</h3>
+          <p class="text-gray-700">A world where mental health knows no borders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center text-indigo-600">Our Leadership Team</h2>
+        <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">Dedicated professionals working across borders to provide mental health support.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Founder & CEO -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+    <div class="team-img-container">
+        <img src="founder.jpg"
+             alt="David Nhial Kuol Garang"
+             width="160" height="160"
+             class="team-img" loading="lazy">
+    </div>
+    <h3 class="text-xl font-semibold mb-1 text-center">DAVID NHIAL KUOL GARANG</h3>
+    <p class="text-indigo-700 font-medium text-center mb-2">Founder & CEO</p>
+    <p class="text-gray-700 mb-4 text-center">Mental health advocate with 10+ years experience in cross-cultural counseling.</p>
+    <div class="text-indigo-700 font-medium text-center">
+        <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+        <a href="mailto:david.n@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+    </div>
+</div>
+
+          <!-- Secretary General -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+            <div class="team-img-container">
+              <img src="secretary.jpg" alt="KUORWEL MARTIN - Secretary General" class="team-img" loading="lazy">
+            </div>
+            <h3 class="text-xl font-semibold mb-1 text-center">KUORWEL MARTIN ANGETH
+</h3>
+            <p class="text-indigo-700 font-medium text-center mb-2">Secretary General</p>
+            <p class="text-gray-700 mb-4 text-center">Manages organizational governance and international partnerships.</p>
+            <div class="text-indigo-700 font-medium text-center">
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+              <a href="mailto:michael.c@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Co-founder Strategy & Growth -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+            <div class="team-img-container">
+              <img src="cofounder.jpg" alt="PAL JAMES - Co-founder Strategy & Growth" class="team-img" loading="lazy">
+            </div>
+            <h3 class="text-xl font-semibold mb-1 text-center">PAL JAMES GATKUOTH LUL
+</h3>
+            <p class="text-indigo-700 font-medium text-center mb-2">Co-founder: Strategy & Growth</p>
+            <p class="text-gray-700 mb-4 text-center">Develops expansion strategies and new program initiatives.</p>
+            <div class="text-indigo-700 font-medium text-center">
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+              <a href="mailto:david.n@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Social Media & Communication -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+            <div class="team-img-container">
+              <img src="martha.jpg" alt="ACHOL ABEL - Social Media & Communication" class="team-img" loading="lazy">
+            </div>
+            <h3 class="text-xl font-semibold mb-1 text-center">ACHOL ABEL MANYUON
+</h3>
+            <p class="text-indigo-700 font-medium text-center mb-2">Social Media & Communication</p>
+            <p class="text-gray-700 mb-4 text-center">Manages outreach and public engagement across platforms.</p>
+            <div class="text-indigo-700 font-medium text-center">
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+              <a href="mailto:aisha.m@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Advocacy & Policy Lead -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+            <div class="team-img-container">
+              <img src="achol.jpg" alt="MARTHA ATEK - Advocacy & Policy Lead" class="team-img" loading="lazy">
+            </div>
+            <h3 class="text-xl font-semibold mb-1 text-center">MARTHA ATEK
+</h3>
+            <p class="text-indigo-700 font-medium text-center mb-2">Advocacy & Policy Lead</p>
+            <p class="text-gray-700 mb-4 text-center">Advances mental health policies and legislative initiatives.</p>
+            <div class="text-indigo-700 font-medium text-center">
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+              <a href="mailto:robert.k@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Community Outreach Director -->
+  <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+  <div class="team-img-container">
+    <img src="deng.jpg" alt="Martin Deng Ngodit - Community Outreach Director" class="team-img" loading="lazy">
+  </div>
+  <h3 class="text-xl font-semibold mb-1 text-center">MARTIN DENG NGODIT</h3>
+  <p class="text-indigo-700 font-medium text-center mb-2">Community Outreach Director</p>
+  <p class="text-gray-700 mb-4 text-center">Leads community engagement initiatives and builds partnerships with local organizations.</p>
+  <div class="text-indigo-700 font-medium text-center">
+    <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+    <a href="mailto:martin.d@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+  </div>
+</div>
+
+          <!-- Head of Peer Support & Counseling -->
+          <div class="team-card card bg-indigo-50 p-6 rounded-xl shadow">
+            <div class="team-img-container">
+              <img src="kuorwel.jpg" alt="ABRAHAN DENG - Head of Peer Support" class="team-img" loading="lazy">
+            </div>
+            <h3 class="text-xl font-semibold mb-1 text-center">ABRAHAM DENG MAGOK
+</h3>
+            <p class="text-indigo-700 font-medium text-center mb-2">Head of Peer Support & Counseling</p>
+            <p class="text-gray-700 mb-4 text-center">Oversees counseling programs and support networks.</p>
+            <div class="text-indigo-700 font-medium text-center">
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+              <a href="mailto:elena.p@cbmhsg.org" class="hover:underline">davidnhial107@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+  <section id="services" class="py-16 bg-indigo-50">
+  <div class="program-card card bg-white p-6 rounded-xl shadow">
+    <div class="mb-4 h-48 overflow-hidden rounded-lg">
+        <img src="images/services/virtual-support.webp"
+             alt="Virtual Support Groups"
+             width="400" height="267"
+             class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-xl font-semibold mb-3">Virtual Support Groups</h3>
+    <p class="text-gray-700 mb-4">Weekly online meetings for individuals facing similar challenges across different countries and time zones.</p>
+    <ul class="text-sm text-gray-600 space-y-1">
+        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Every Tuesday & Thursday</li>
+        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> 6-8 participants per group</li>
+        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Led by licensed therapists</li>
+    </ul>
+</div>
+      <!-- Educational Resources -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="educate.jpeg"
+               alt="Educational Resources"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Educational Resources</h3>
+        <p class="text-gray-700">Comprehensive mental health materials.</p>
+      </div>
+
+      <!-- Emergency Helpline -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+               alt="Emergency Helpline"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Emergency Helpline</h3>
+        <p class="text-gray-700">Immediate crisis support when you need it most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Resources Section -->
+<section id="resources" class="py-16 bg-green-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center text-green-600">Resources & Blog</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Mental Health Articles -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="mental.jpeg"
+               alt="Mental Health Articles"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Mental Health Articles</h3>
+        <p class="text-gray-700">Read articles on mental health topics.</p>
+      </div>
+
+      <!-- Self-Help Guides -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="mind.jpeg"
+               alt="Self-Help Guides"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Self-Help Guides</h3>
+        <p class="text-gray-700">Mindfulness activities and exercises.</p>
+      </div>
+
+      <!-- Videos & Podcasts -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="podcast.jpeg"
+               alt="Videos & Podcasts"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Videos & Podcasts</h3>
+        <p class="text-gray-700">Watch and listen to mental health content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Impact Section -->
+    <section id="impact" class="py-16 bg-blue-600 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Our Impact</h2>
+
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="impact-item">
+            <div class="impact-counter" data-count="1250">2</div>
+            <p class="text-blue-100">Individuals Helped</p>
+          </div>
+          <div class="impact-item">
+            <div class="impact-counter" data-count="85">3</div>
+            <p class="text-blue-100">Therapy Sessions Weekly</p>
+          </div>
+          <div class="impact-item">
+            <div class="impact-counter" data-count="320">5</div>
+            <p class="text-blue-100">Support Group Meetings</p>
+          </div>
+          <div class="impact-item">
+            <div class="impact-counter" data-count="42">0</div>
+            <p class="text-blue-100">Trained Professionals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center text-blue-600">Stories of Hope</h2>
+        <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">Hear from people who have found support through our services.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="testimonial-card bg-white p-6 rounded-xl shadow">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Jamie L.</h3>
+                <p class="text-gray-500 text-sm">Anxiety Support</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"After years of struggling with anxiety, the therapy and support groups at Mindful Horizons gave me tools to manage my symptoms. I've never felt more in control of my mental health."</p>
+            <div class="mt-4 text-yellow-400">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card bg-white p-6 rounded-xl shadow">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Marcus T.</h3>
+                <p class="text-gray-500 text-sm">Depression Recovery</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"The crisis intervention team literally saved my life. Now I'm in regular therapy and attending a men's mental health group. I'm learning to cope in healthy ways."</p>
+            <div class="mt-4 text-yellow-400">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Support -->
+    <section id="support" class="py-16 bg-green-600 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Get Support</h2>
+        <p class="text-center text-green-100 max-w-3xl mx-auto mb-12">Reach out for help today. Our compassionate team is ready to assist you.</p>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Appointment Form -->
+          <div class="bg-white p-8 rounded-xl shadow-lg text-gray-800">
+            <h3 class="text-xl font-semibold mb-4 text-center text-green-600">
+              <i class="fas fa-calendar-check mr-2" aria-hidden="true"></i> Schedule an Appointment
+            </h3>
+            <form class="space-y-4">
+              <div>
+                <label for="supportName" class="block text-gray-700 mb-1">Name</label>
+                <input type="text" id="supportName" class="form-input" required>
+              </div>
+              <div>
+                <label for="supportEmail" class="block text-gray-700 mb-1">Email</label>
+                <input type="email" id="supportEmail" class="form-input" required>
+              </div>
+              <div>
+                <label for="supportPhone" class="block text-gray-700 mb-1">Phone</label>
+                <input type="tel" id="supportPhone" class="form-input" required>
+              </div>
+              <div>
+                <label for="supportType" class="block text-gray-700 mb-1">Service Needed</label>
+                <select id="supportType" class="form-input" required>
+                  <option value="">Select a service</option>
+                  <option value="therapy">Individual Therapy</option>
+                  <option value="group">Support Group</option>
+                  <option value="crisis">Crisis Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full btn btn-primary px-6 py-3 rounded-lg font-semibold">
+                Request Appointment
+              </button>
+            </form>
+          </div>
+
+          <!-- Immediate Help -->
+          <div class="bg-green-700 p-8 rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">
+              <i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i> Need Immediate Help?
+            </h3>
+            <p class="mb-6">If you're in crisis or having thoughts of self-harm, please reach out to these resources immediately:</p>
+
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div class="bg-white text-green-600 p-2 rounded-full mr-3">
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <strong class="block"> +201146359461 Your 24/7 Mental Health Support</strong>
+                  <span><a href="tel:988" class="hover:underline">Call or text +201146359461</a></span>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-white text-green-600 p-2 rounded-full mr-3">
+                  <i class="fas fa-comment" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <strong class="block">Mental Health Support Text Line</strong>
+                  <span>Text HOME to  +201102522874</span>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-white text-green-600 p-2 rounded-full mr-3">
+                  <i class="fas fa-hospital" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <strong class="block">24/7 Crisis Support</strong>
+                  <span><a href="tel: +201102522874" class="hover:underline"> +201146359461</a></span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="mt-8 bg-green-800 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Walk-In Crisis Center</h4>
+              <address class="text-sm not-italic">
+                Hadayek El Maadi, 11728<br>
+                Open 24 hours, 7 days a week
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- Newsletter -->
+<section class="py-12 bg-gradient-to-r from-purple-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl border border-white border-opacity-20">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+            <p class="text-center text-white text-opacity-90 mb-8">Send us a message and we'll respond promptly</p>
+
+           <form id="contactForm" action="https://formsubmit.co/your-real-email@cbmhsg.org" method="POST" class="space-y-6">
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="hidden" name="_autoresponse" value="Thank you for contacting Cross Border Mental Health Support Group. We'll respond soon.">
+
+    <div>
+        <label for="name" class="block text-white text-opacity-90 mb-2 text-sm font-medium">Your Name</label>
+        <input type="text" id="name" name="name" required minlength="2" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-60 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent" placeholder="Enter your name">
+    </div>
+    <div>
+        <label for="email" class="block text-white text-opacity-90 mb-2 text-sm font-medium">Email Address</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-60 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent" placeholder="your@email.com">
+    </div>
+    <div>
+        <label for="message" class="block text-white text-opacity-90 mb-2 text-sm font-medium">Your Message</label>
+        <textarea id="message" name="message" rows="4" required minlength="10" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-60 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent" placeholder="How can we help you?"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-4 rounded-lg font-bold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-[1.02] shadow-lg">
+        Send Message
+        <i class="fas fa-paper-plane ml-2"></i>
+    </button>
+</form>
+        </div>
+    </div>
+</section>
+
+<section id="get-involved" class="py-16 bg-purple-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center text-purple-600">Get Involved</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Volunteer -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="hand.jpeg"
+               alt="Volunteer"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Volunteer</h3>
+        <p class="text-gray-700">Help others through our support programs.</p>
+      </div>
+
+      <!-- Donate -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="donate.jpeg"
+               alt="Donate"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Donate</h3>
+        <p class="text-gray-700">Support our mission with your contribution.</p>
+        <div class="mt-4">
+          <button class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium">
+            Donate Now
+          </button>
+          <div class="flex justify-center mt-2">
+            <i class="fab fa-cc-visa text-2xl mx-2 text-gray-700"></i>
+            <i class="fab fa-cc-mastercard text-2xl mx-2 text-gray-700"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partner With Us -->
+      <div class="program-card card bg-white p-6 rounded-xl shadow">
+        <div class="mb-4 h-48 overflow-hidden rounded-lg">
+          <img src="partner.jpeg"
+               alt="Partner With Us"
+               class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Partner With Us</h3>
+        <p class="text-gray-700">Collaborate with our organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-xl font-bold mb-4 flex items-center">
+            <i class="fas fa-brain mr-2"></i> CBMHSG
+          </h4>
+          <p class="text-blue-200">Providing compassionate mental health support and resources to help individuals and families thrive.</p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+            <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+            <li><a href="#resources" class="text-blue-200 hover:text-white">Resources</a></li>
+            <li><a href="#support" class="text-blue-200 hover:text-white">Get Support</a></li>
+            <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-200 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">HIPAA Compliance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100070073051084" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <h4 class="text-lg font-semibold mt-6 mb-2">Newsletter</h4>
+          <form class="flex">
+            <input type="email" placeholder="Your email" class="px-3 py-2 text-gray-800 rounded-l focus:outline-none w-full">
+            <button type="submit" class="bg-blue-600 px-3 py-2 rounded-r hover:bg-blue-700">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-blue-700 text-center text-blue-200">
+        <p>&copy; 2025 CBMHSG. All rights reserved.</p>
+        <p class="mt-2">Website designed by <span class="text-blue-300 font-semibold">Andrew Kuanyin</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+document.getElementById('languageSwitcher').addEventListener('click', function() {
+    document.getElementById('languageDropdown').classList.toggle('hidden');
+});
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const submitBtn = this.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    // Simulate form submission (replace with actual fetch/XHR)
+    setTimeout(() => {
+        alert('Thank you for your message! We will respond soon.');
+        this.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane ml-2"></i>';
+    }, 1500);
+});
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobileMenuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('open');
+        const icon = mobileMenuButton.querySelector('i');
+        if (mobileMenu.classList.contains('open')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          mobileMenuButton.querySelector('i').classList.remove('fa-times');
+          mobileMenuButton.querySelector('i').classList.add('fa-bars');
+        });
+      });
+
+      // Back to top button
+      const backToTopButton = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+      </script>
+</body>
+</html>
